@@ -115,8 +115,8 @@ env = simpy.Environment()
 
 # Set up resources
 receptionist = simpy.Resource(env, capacity=1)
-triage_nurse = simpy.Resource(env, capacity=2) # base = 2
-treatment_cubicle = simpy.Resource(env, capacity=4) # base = 4
+triage_nurse = simpy.Resource(env, capacity=1) # base = 1
+treatment_cubicle = simpy.Resource(env, capacity=3) # base = 3
 
 # Specify distribution parameters
 mean_interarrival_time = 8
